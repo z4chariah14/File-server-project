@@ -10,7 +10,7 @@ set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
 # 2. Find the Threading Library (Crucial for comm.os logic)
-# It is required to make pthread_create works.
+# It is required to make pthread_create works. - Learned this from AI
 find_package(Threads REQUIRED)
 
 # 3. Define the Server Executable
