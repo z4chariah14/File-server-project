@@ -9,6 +9,7 @@ add_compile_definitions(_GNU_SOURCE)
 
 set(CMAKE_C_STANDARD 23)
 
+<<<<<<< HEAD
 
 # Turn on warnings that help flag the most common potential issues in code.
 set(CMAKE_C_FLAGS "-Wall -Wextra")
@@ -33,6 +34,10 @@ set(CMAKE_C_CLANG_TIDY "clang-tidy")
 
 # Find the Threading Library (Crucial for comm.os logic)
 # It is required to make pthread_create works.
+=======
+# 2. Find the Threading Library (Crucial for comm.os logic)
+# It is required to make pthread_create works - Learned this from AI
+>>>>>>> 70f7e7ebb6bd6caab02ba73e91db059b5deb8fe8
 find_package(Threads REQUIRED)
 
 # Define the Server Executable
